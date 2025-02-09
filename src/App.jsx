@@ -18,7 +18,7 @@ function App() {
     if (input.trim() === "") return;
     const newSentence = {
       text: input,
-      date: new Date().toLocaleDateString("ar-EG", {
+      date: new Date().toLocaleDateString("en-EG", {
         year: "numeric",
         month: "long",
         day: "numeric",
