@@ -29,8 +29,9 @@ function App() {
   };
 
   const handleUndo = () => {
-    setSentences(sentences.slice(0, -1));
-     setInput("");
+    if (input.trim() === ""){
+    setSentences(sentences.slice(0, -1));}
+    else{ setInput("");}
   };
 
   return (
