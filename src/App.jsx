@@ -30,6 +30,7 @@ function App() {
 
   const handleUndo = () => {
     setSentences(sentences.slice(0, -1));
+     setInput("");
   };
 
   return (
