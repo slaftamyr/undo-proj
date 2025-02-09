@@ -40,14 +40,13 @@ function App() {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="اكتب ذكرياتك هنا..."
+          placeholder="Write your memories"
         />
         <button className="save-btn" onClick={handleSave}>
-          حفظ
+       Save
         </button>
         <button className="undo-btn" onClick={handleUndo}>
-          تراجع
-        </button>
+Undo        </button>
       </div>
       <div className="sentences">
         {sentences.map((sentence, index) => (
